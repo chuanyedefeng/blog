@@ -14,6 +14,6 @@ import java.util.List;
 @Mapper
 public interface BlogUserMapper extends BaseMapper<BlogUserDO> {
     @Select("select * from blog_user")
-    List<BlogUserDO> selectAll();
+    List<BlogUserDO> sewlectAll();
 }
 

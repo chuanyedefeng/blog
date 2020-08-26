@@ -3,6 +3,9 @@ package com.yunfan.blog.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
+import com.yunfan.blog.dao.UserTestMapper;
+import com.yunfan.blog.domain.UserTest;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
@@ -11,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
+import java.util.List;
 
 /**
  * @author fengyurong
